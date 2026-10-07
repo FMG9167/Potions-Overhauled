@@ -10,5 +10,7 @@ public class PotionsOverhauled implements ModInitializer {
 
     @Override
     public void onInitialize() {
+        PotionsOverhauledItems.onInitialize();
+        PotionsOverhauledComponents.initialize();
     }
 }
