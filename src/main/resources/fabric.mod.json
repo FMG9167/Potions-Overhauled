@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "potions_overhauled",
+  "version": "${version}",
+  "name": "Potions Overhauled",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/potions_overhauled/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "io.github.FMG9167.potions_overhauled.client.PotionsOverhauledDataGenerator"
+    ],
+    "client": [
+      "io.github.FMG9167.potions_overhauled.client.PotionsOverhauledClient"
+    ],
+    "main": [
+      "io.github.FMG9167.potions_overhauled.PotionsOverhauled"
+    ]
+  },
+  "mixins": [
+    "potions_overhauled.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
